@@ -12,6 +12,7 @@ rcvar="rtorrent_enable"
 
 start_cmd="${name}_start"
 stop_cmd="${name}_stop"
+command="/usr/local/bin/rtorrent"
 
 rtorrent_start() {
 	su - rtorrent -c "tmux new-session -d -s rtorrent 'nice /usr/local/bin/rtorrent'"
